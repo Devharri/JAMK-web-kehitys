@@ -1,0 +1,106 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    background-color: grey;
+}
+
+#page {
+    width: 960px;
+    height: 660px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+#header {
+    height: 80px;
+    background-color: blueviolet;
+}
+
+#header_logo, #header_center, #header_right {
+    width: 318px;
+    height: 78px;
+    float: left;
+    border: 1px dashed black;
+    color: rgb(39, 39, 39);
+}
+
+#header_logo p, #header_center p, #header_right p {
+    margin: 20px;
+    text-align: center;
+}
+
+#header_logo {
+    background-color: bisque;
+}
+
+#header_center {
+    background-color: aqua;
+}
+
+#header_right {
+    background-color: burlywood;
+}
+
+#header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#menu {
+    height: 28px;
+    line-height: 28px;
+    background-color: chartreuse;
+    border: 1px dashed black;
+}
+
+#menu p {
+    margin: auto;
+    text-align: center;
+}
+
+#content {
+    background-color: aquamarine;
+    height: 520px;
+}
+
+#content_left {
+    background-color: cadetblue;
+    width: 418px;
+    height: 398px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    float: left;
+}
+
+#content_left p {
+    text-align: left;
+    margin: 20px;
+}
+
+#content_right {
+    background-color: rgb(148, 160, 95);
+    width: 418px;
+    height: 398px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    float: left;
+}
+
+#content_right p {
+    text-align: left;
+    margin: 20px;
+}
+
+#footer {
+    background-color: rgb(207, 44, 44);
+    height: 30px;
+    line-height: 30px;
+}
+
+#footer p {
+    margin: auto;
+    text-align: center;
+}
