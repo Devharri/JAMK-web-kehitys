@@ -23,7 +23,7 @@ h1 {
 }
 
 #albumi {
-    width: 50%;
+    max-width: 481px;
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;

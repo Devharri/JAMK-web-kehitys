@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    margin: 2em auto;
+    background-color: brown;
+    width: 50%;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+h1 {
+    margin: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color:cadetblue
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
