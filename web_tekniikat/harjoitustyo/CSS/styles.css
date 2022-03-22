@@ -54,47 +54,6 @@ body {
 .parallax svg { 
   margin-top: -1px;
 }
-.navbar {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #0099ff;
-  text-align: center;
-}
-.navbar li {
-  display: inline-block;
-  float: none;
-}
-.navbar li a {
-  width: 3.5em;
-  display: block;
-  color: aliceblue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.25em;
-  border-radius: 7%;
-  transition: transform .2s;
-}
-
-.navbar li a:hover {
-  background-color: #006ab1;
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
-  color: white;
-}
-.navbar li a:active {
-  -ms-transform: scale(1); /* IE 9 */
-  -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1); 
-}
 /* TOPNAV*/
 .topnav {
   position: -webkit-sticky; /* Safari */
@@ -171,7 +130,6 @@ footer a {
   text-decoration: none;
   color: #D3D3D3;
 }
-
 /* FOR MOBILE PHONES*/
 @media only screen and (max-width: 476px) {
   body {
@@ -222,7 +180,6 @@ footer a {
     display: block;
     text-align: left;
   }
-
   .parallax {
     /* Set a specific height */
     min-height: 8em;
@@ -231,7 +188,6 @@ footer a {
     background-size: contain;
   }
 }
-
 /* FOR MOBILE PHONES*/  
 @media only screen and (min-width: 476px) {
   body {
@@ -255,7 +211,6 @@ footer a {
     background-size: contain;
   }
 }
-
   /* FOR TABLETS*/
 @media only screen and (min-width: 768px) {
   body {
@@ -280,7 +235,6 @@ footer a {
     background-size: cover;
   }
 }
-
 /* FOR DESKTOP*/
 @media only screen and (min-width: 992px) {
   body {
