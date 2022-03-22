@@ -1,275 +1,307 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 body {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    background-color: rgb(241, 241, 241);
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 241);
 }
-
-body * {
-    margin: 0px;
-}
-
 .banner {
-      background-color: #0099ff;
-      color: #D3D3D3;
-      text-align: center;
-      font-size: 2em;
-      height: 13em;
-  }
+  background-color: #0099ff;
+  color: aliceblue;
+  text-align: center;
+}
 .banner h2 {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-bottom: -28px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin: 0;
 }
 .banner h1 {
-    padding-top: 0px;
-    margin-top: 0px;
-    font-size: 3.5em;
-  }
-
+  padding-top: 0;
+  margin-top: 0;
+}
 .osio1{
-    background-color: #9fd9ff;
-    height: 500px;
-    padding-top: 49px;
+  background-color: #9fd9ff;
+  height: 500px;
+  padding-top: 29px;
 }
 .osio2{
-    background-color: #0099ff;
-    height: 500px;
-    padding-top: 49px;
-  }
-
-.osio3{
-    background-color: #9fd9ff;
+  background-color: #0099ff;
   height: 500px;
-  padding-top: 49px;
+  padding-top: 29px;
+}
+.osio3{
+  background-color: #9fd9ff;
+  height: 500px;
+  padding-top: 29px;
 }
 .osio4{
   background-color: #0099ff;
-    height: 500px;
-    padding-top: 49px;
+  height: 500px;
+  padding-top: 29px;
 }
-
-  .parallax {
-    /* The image used */
-    background-image: url("../images/Code-Head-Text.svg");
-
-    /* Set a specific height */
-    min-height: 21em;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:contain;  
+.parallax {
+  /* The image used */
+  background-image: url("../images/Code-Head-Text.svg");
+  /* Set a specific height */
+  min-height: 21em;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;  
 }
-  .parallax svg { 
-    margin-top: -1px;
-  }
-
+.parallax svg { 
+  margin-top: -1px;
+}
 .navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0099ff;
-    text-align: center;
-  }
-  
-  li {
-    display: inline-block;
-  }
-  
-  li a {
-    width: 3.5em;
-    display: block;
-    color: aliceblue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.25em;
-    border-radius: 7%;
-    transition: transform .2s;
-  }
-
-  li a:hover {
-    background-color: #006ab1;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-    color: white;
-  }
-  
- li a:active {
-    -ms-transform: scale(1); /* IE 9 */
-    -webkit-transform: scale(1); /* Safari 3-8 */
-    transform: scale(1); 
-
-  }
-
-  #goTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #0099ff;
-    color: aliceblue;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    transition: transform .2s;
-  }
-  
-  #goTopBtn:hover {
-    background-color: #006ab1;
-    color: white;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-  }
-
-  #goTopBtn:active {
-    -ms-transform: scale(1); /* IE 9 */
-    -webkit-transform: scale(1); /* Safari 3-8 */
-    transform: scale(1); 
-  }
-
-footer {
-    background-color: #006ab1;
-    padding: 1em;
-    color: #D3D3D3;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0099ff;
+  text-align: center;
+}
+.navbar li {
+  display: inline-block;
+  float: none;
+}
+.navbar li a {
+  width: 3.5em;
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25em;
+  border-radius: 7%;
+  transition: transform .2s;
 }
 
+.navbar li a:hover {
+  background-color: #006ab1;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  color: white;
+}
+.navbar li a:active {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1); 
+}
+/* TOPNAV*/
+.topnav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0099ff;
+}
+.topnav a {
+  /*width: 4.5em;*/
+  /*float: left;*/
+  display: inline-block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25em;
+  border-radius: 7%;
+  transition: transform .2s;
+}
+.topnav a:hover {
+  background-color: #006ab1;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  color: white;
+}
+.topnav a:active {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1);
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+/* /TOPNAV*/
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #0099ff;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: transform .2s;
+}
+#goTopBtn:hover {
+  background-color: #006ab1;
+  color: white;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+#goTopBtn:active {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1); 
+}
+footer {
+  background-color: #006ab1;
+  padding: 1em;
+  color: #D3D3D3;
+}
 footer a {
   text-decoration: none;
   color: #D3D3D3;
 }
 
 /* FOR MOBILE PHONES*/
-@media only screen and (min-width: 414px) {
-
-    body {
-        width: 95%;
-        text-align: center;
-        margin: 0 auto;
-        background-color: rgb(241, 241, 241);
-    }
-
-    .banner {
-        background-color: #0099ff;
-        color: aliceblue;
-        text-align: center;
-        height: 4em;
-    }
-
-      .banner h2 {
-        padding-top: 10px;
-        padding-bottom: 0px;
-        margin-bottom: -10px;
-        font-size: 1em;
-    }
-    .banner h1 {
-        padding-top: 0px;
-        margin-top: 0px;
-        font-size: 2em;
-      }
-
-    .parallax {
-            /* Set a specific height */
-    min-height: 8em;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: top;
-        background-size: contain;
-    }
+@media only screen and (max-width: 476px) {
+  body {
+    width: 95%;
+  }
+  .banner {
+    height: 4em;
+  }
+  .banner h2 {
+    margin-bottom: -2px;
+    font-size: 0.95em;
+  }
+  .banner h1 {
+    font-size: 1.85em;
   }
 
+  .navbar li {
+    display: block;
+    float: none;
+  }
+
+  .navbar li a {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .parallax {
+    /* Set a specific height */
+    min-height: 8em;
+    /* Create the parallax scrolling effect */
+    background-position: top;
+    background-size: contain;
+  }
+}
+
+/* FOR MOBILE PHONES*/  
+@media only screen and (min-width: 476px) {
+  body {
+    width: 95%;
+  }
+  .banner {
+    height: 4em;
+  }
+  .banner h2 {
+    margin-bottom: -5px;
+    font-size: 1em;
+  }
+  .banner h1 {
+    font-size: 2em;
+  }
+  .parallax {
+    /* Set a specific height */
+    min-height: 8em;
+    /* Create the parallax scrolling effect */
+    background-position: top;
+    background-size: contain;
+  }
+}
+
   /* FOR TABLETS*/
-  @media only screen and (min-width: 768px) {
-    body {
-        width: 95%;
-        text-align: center;
-        margin: 0 auto;
-        background-color: rgb(241, 241, 241);
-    }
-    .banner {
-        background-color: #0099ff;
-        color: aliceblue;
-        text-align: center;
-        height: 5.5em;
-    }
-
-    .banner h2 {
-        padding-top: 10px;
-        padding-bottom: 0px;
-        margin-bottom: -28px;
-        font-size: 1.5em;
-    }
-    .banner h1 {
-        padding-top: 0px;
-        margin-top: 0px;
-        font-size: 3.5em;
-      }
-      .parallax {
-              /* Set a specific height */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 95%;
+  }
+  .banner {
+    height: 6.5em;
+    font-size: 2em;
+  }
+  .banner h2 {
+    margin-bottom: -28px;
+    font-size: 1.5em;
+  }
+  .banner h1 {
+    font-size: 3.5em;
+  }
+  .parallax {
+    /* Set a specific height */
     min-height: 16em;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-          background-size: cover;
-
-      }
-    }
-
-    /* FOR DESKTOP*/
-    @media only screen and (min-width: 992px) {
-  
-        body {
-            width: 80%;
-            text-align: center;
-            margin: 0 auto;
-            background-color: rgb(241, 241, 241);
-        }
-        .banner {
-            background-color: #0099ff;
-            color: aliceblue;
-            text-align: center;
-            height: 6.5em;
-        }
-        .banner h2 {
-            padding-top: 10px;
-            padding-bottom: 0px;
-            margin-bottom: -28px;
-            font-size: 1.5em;
-        }
-        .banner h1 {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-size: 3.5em;
-          }
-          
-        .parallax {
-                /* Set a specific height */
-      min-height: 22em;
-          /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /* Create the parallax scrolling effect */
     background-position: center;
-            background-size: contain;
-  
-        }
-      }
+    background-size: cover;
+  }
+}
+
+/* FOR DESKTOP*/
+@media only screen and (min-width: 992px) {
+  body {
+    width: 80%;
+  }
+  .banner {
+    height: 6.5em;
+    font-size: 2em;
+  }
+  .banner h2 {
+    margin-bottom: -28px;
+    font-size: 1.5em;
+  }
+  .banner h1 {
+    font-size: 3.5em;
+  }
+  .parallax {
+    /* Set a specific height */
+    min-height: 22em;
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-size: contain;
+  }
+}

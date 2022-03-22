@@ -6,10 +6,11 @@
     <meta name="description" content="My personal portfolio.">
     <meta name="keywords" content="personal, portfolio">
     <meta name="author" content="Harri Honkanen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Harri Honkanen - Harjoitustyö - Etusivu</title>
 
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,14 +20,15 @@
         <h1>Portfolioni</h1>
     </section>
     <!-- Navbar -->
-    <section class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#section2">Section2</a></li>
-            <li><a href="#section3">Section3</a></li>
-            <li><a href="#section4">Section4</a></li>
-        </ul>
-    </section>
+    <div class="topnav" id="myTopnav">
+        <a href="#">Home</a>
+        <a href="#section2">About me</a>
+        <a href="#section3">Portfolio</a>
+        <a href="#section4">More</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <!-- parallax -->
     <div class="parallax">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 275">
@@ -58,8 +60,8 @@
     <footer>
         <p>Author: Harri Honkanen</p>
         <p><a href="mailto:devharri@outlook.com">devharri@outlook.com</a></p>
-      </footer>
-      <button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
+    </footer>
+    <button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
     <script src="JS/scripts.js"></script>
 </body>
 
