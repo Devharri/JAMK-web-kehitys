@@ -15,7 +15,7 @@ body * {
 
 .banner {
       background-color: #0099ff;
-      color: aliceblue;
+      color: #D3D3D3;
       text-align: center;
       font-size: 2em;
       height: 13em;
@@ -53,11 +53,6 @@ body * {
     padding-top: 49px;
 }
 
-  .header {
-    background: #0099ff;
-    color: #f1f1f1;
-  }
-
   .parallax {
     /* The image used */
     background-image: url("../images/Code-Head-Text.svg");
@@ -69,8 +64,16 @@ body * {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
-   
+    background-size:contain;  
+}
+  .parallax svg { 
+    margin-top: -1px;
+  }
+
+.navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 ul {
@@ -79,9 +82,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #0099ff;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
     text-align: center;
   }
   
@@ -92,12 +92,12 @@ ul {
   li a {
     width: 3.5em;
     display: block;
-    color: white;
+    color: aliceblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
-    font-size: large;
+    font-size: 1.25em;
     border-radius: 7%;
     transition: transform .2s;
   }
@@ -107,6 +107,7 @@ ul {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
+    color: white;
   }
   
  li a:active {
@@ -118,6 +119,13 @@ ul {
 
 footer {
     background-color: #006ab1;
+    padding: 1em;
+    color: #D3D3D3;
+}
+
+footer a {
+  text-decoration: none;
+  color: #D3D3D3;
 }
 
 /* FOR MOBILE PHONES*/
