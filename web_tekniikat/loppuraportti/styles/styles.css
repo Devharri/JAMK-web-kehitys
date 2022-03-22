@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* general body styles */
 body {
     background-color: #fefbe9;

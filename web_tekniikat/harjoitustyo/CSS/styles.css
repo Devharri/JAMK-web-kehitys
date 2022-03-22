@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 241);
+}
+
+body * {
+    margin: 0px;
+}
+
+.banner {
+      background-color: #0099ff;
+      color: aliceblue;
+      text-align: center;
+      font-size: 2em;
+      height: 13em;
+  }
+.banner h2 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: -28px;
+}
+.banner h1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 3.5em;
+  }
+
+.osio1{
+    background-color: #9fd9ff;
+    height: 500px;
+    padding-top: 49px;
+}
+.osio2{
+    background-color: #0099ff;
+    height: 500px;
+    padding-top: 49px;
+  }
+
+.osio3{
+    background-color: #9fd9ff;
+  height: 500px;
+  padding-top: 49px;
+}
+.osio4{
+  background-color: #0099ff;
+    height: 500px;
+    padding-top: 49px;
+}
+
+  .header {
+    background: #0099ff;
+    color: #f1f1f1;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../images/Code-Head-Text.svg");
+
+    /* Set a specific height */
+    min-height: 21em;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0099ff;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    width: 3.5em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    border-radius: 7%;
+    transition: transform .2s;
+  }
+
+  li a:hover {
+    background-color: #006ab1;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  
+ li a:active {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+
+  }
+
+footer {
+    background-color: #006ab1;
+}
+
+/* FOR MOBILE PHONES*/
+@media only screen and (min-width: 414px) {
+
+    body {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: rgb(241, 241, 241);
+    }
+
+    .banner {
+        background-color: #0099ff;
+        color: aliceblue;
+        text-align: center;
+        height: 4em;
+    }
+
+      .banner h2 {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: -10px;
+        font-size: 1em;
+    }
+    .banner h1 {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 2em;
+      }
+
+    .parallax {
+            /* Set a specific height */
+    min-height: 8em;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+    }
+  }
+
+  /* FOR TABLETS*/
+  @media only screen and (min-width: 768px) {
+    body {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: rgb(241, 241, 241);
+    }
+    .banner {
+        background-color: #0099ff;
+        color: aliceblue;
+        text-align: center;
+        height: 5.5em;
+    }
+
+    .banner h2 {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: -28px;
+        font-size: 1.5em;
+    }
+    .banner h1 {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 3.5em;
+      }
+      .parallax {
+              /* Set a specific height */
+    min-height: 16em;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+          background-size: cover;
+
+      }
+    }
+
+    /* FOR DESKTOP*/
+    @media only screen and (min-width: 992px) {
+  
+        body {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgb(241, 241, 241);
+        }
+        .banner {
+            background-color: #0099ff;
+            color: aliceblue;
+            text-align: center;
+            height: 6.5em;
+        }
+        .banner h2 {
+            padding-top: 10px;
+            padding-bottom: 0px;
+            margin-bottom: -28px;
+            font-size: 1.5em;
+        }
+        .banner h1 {
+            padding-top: 0px;
+            margin-top: 0px;
+            font-size: 3.5em;
+          }
+          
+        .parallax {
+                /* Set a specific height */
+      min-height: 22em;
+          /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+            background-size: contain;
+  
+        }
+      }
