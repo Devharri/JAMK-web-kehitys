@@ -13,12 +13,14 @@ body {
 }
 .banner h2 {
   padding-top: 10px;
-  padding-bottom: 0;
   margin: 0;
+  padding-bottom: 0;
+  position: relative;
+
 }
 .banner h1 {
   padding-top: 0;
-  margin-top: 0;
+  margin: 0;
 }
 .osio1{
   background-color: #9fd9ff;
@@ -135,12 +137,11 @@ footer a {
   body {
     width: 100%;
   }
-  .banner {
-    height: 4.5em;
-  }
+
   .banner h2 {
-    margin-bottom: -10px;
+    margin-bottom: -15px;
     font-size: 1.25em;
+    right: 30px;
   }
   .banner h1 {
     font-size: 2.5em;
@@ -193,15 +194,17 @@ footer a {
   body {
     width: 95%;
   }
-  .banner {
-    height: 4.5em;
-  }
+ 
   .banner h2 {
-    margin-bottom: -5px;
-    font-size: 1.25em;
+    margin-bottom: -15px;
+    font-size: 1.5em;
+    right: 30px;
   }
   .banner h1 {
-    font-size: 2.5em;
+    font-size: 2.75em;
+  }
+  .topnav a {
+    font-size: 1em;
   }
   .parallax {
     /* Set a specific height */
@@ -217,15 +220,19 @@ footer a {
     width: 95%;
   }
   .banner {
-    height: 6.5em;
     font-size: 2em;
   }
   .banner h2 {
-    margin-bottom: -28px;
+    margin-bottom: -45px;
     font-size: 1.5em;
+    right: 80px;
   }
   .banner h1 {
     font-size: 3.5em;
+    right: 10px;
+  }
+  .topnav a {
+    font-size: 1.5em;
   }
   .parallax {
     /* Set a specific height */
@@ -241,15 +248,18 @@ footer a {
     width: 80%;
   }
   .banner {
-    height: 6.5em;
     font-size: 2em;
   }
   .banner h2 {
-    margin-bottom: -28px;
+    margin-bottom: -45px;
     font-size: 1.5em;
+    right: 80px;
   }
   .banner h1 {
     font-size: 3.5em;
+  }
+  .topnav a {
+    font-size: 1.5em;
   }
   .parallax {
     /* Set a specific height */
