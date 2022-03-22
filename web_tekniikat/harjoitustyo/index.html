@@ -15,14 +15,12 @@
 
 <body>
     <!-- Banner -->
-    <section class="banner">
+    <section class="banner" id="top">
         <div>
             <h2>My</h2>
             <h1>Portfolio</h1>
         </div>
-
     </section>
-
     <!-- Navbar -->
     <div class="topnav" id="myTopnav">
         <a href="#section2">About me</a>
@@ -49,8 +47,8 @@
         <h1>second section</h1>
     </section>
     <!-- parallax -->
-    <section class="parallax">
-    </section>
+    <div class="parallax">
+    </div>
     <!-- 3rd section -->
     <section class="osio3" id="section3">
         <h1>third section</h1>
@@ -64,7 +62,9 @@
         <p>Author: Harri Honkanen</p>
         <p><a href="mailto:devharri@outlook.com">devharri@outlook.com</a></p>
     </footer>
-    <button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
+    <a href="#top" id="goTopBtn">Top</a>
+    <!--<button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/scripts.js"></script>
 </body>
 
