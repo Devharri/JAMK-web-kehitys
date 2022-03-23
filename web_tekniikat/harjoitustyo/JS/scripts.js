@@ -61,7 +61,7 @@ $(document).ready(function () {
       }
       //Safari, delay is animation time
       else if (navigator.userAgent.indexOf("Safari") != -1) {
-        delayTime = 700;
+        delayTime = 500;
       }
       //Firefox
       else if (navigator.userAgent.indexOf("Firefox") != -1) {

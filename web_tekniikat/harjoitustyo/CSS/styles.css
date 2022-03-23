@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding-bottom: 0;
   position: relative;
-
 }
 .banner h1 {
   padding-top: 0;
@@ -46,12 +45,13 @@ body {
   /* The image used */
   background-image: url("../images/Code-Head-Text.svg");
   /* Set a specific height */
-  min-height: 21em;
+  /* Full height */
+  height: 20%; 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:contain;  
+  background-size:cover;
 }
 .parallax svg { 
   margin-top: -1px;
@@ -210,6 +210,10 @@ footer p {
     transform: scale(1);
     color: white;
   }
+  .parallax {
+    /* Full height */
+    height: 9em; 
+  }
   .osio1{
     padding-top: 38px;
     margin: 0;
@@ -238,13 +242,6 @@ footer p {
   .osio4 h1{
     margin: 0;
   }
-  .parallax {
-    /* Set a specific height */
-    min-height: 8em;
-    /* Create the parallax scrolling effect */
-    background-position: top;
-    background-size: contain;
-  }
 }
 /* FOR MOBILE PHONES*/  
 @media only screen and (min-width: 476px) {
@@ -263,6 +260,10 @@ footer p {
   .topnav a {
     font-size: 1em;
   }
+  .parallax {
+    /* Full height */
+    height: 10em;
+  }
   .osio1{
     padding-top: 29px;
   }
@@ -274,13 +275,6 @@ footer p {
   }
   .osio4{
     padding-top: 29px;
-  }
-  .parallax {
-    /* Set a specific height */
-    min-height: 8em;
-    /* Create the parallax scrolling effect */
-    background-position: top;
-    background-size: contain;
   }
 }
   /* FOR TABLETS*/
@@ -303,6 +297,10 @@ footer p {
   .topnav a {
     font-size: 1.5em;
   }
+  .parallax {
+    /* Full height */
+    height: 14em;
+  }
   .osio1{
     padding-top: 29px;
   }
@@ -314,13 +312,6 @@ footer p {
   }
   .osio4{
     padding-top: 29px;
-  }
-  .parallax {
-    /* Set a specific height */
-    min-height: 16em;
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-size: cover;
   }
 }
 /* FOR DESKTOP*/
@@ -342,6 +333,10 @@ footer p {
   .topnav a {
     font-size: 1.5em;
   }
+  .parallax {
+    /* Full height */
+    height: 18em; 
+  }
   .osio1{
     padding-top: 29px;
   }
@@ -353,12 +348,5 @@ footer p {
   }
   .osio4{
     padding-top: 29px;
-  }
-  .parallax {
-    /* Set a specific height */
-    min-height: 22em;
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-size: contain;
   }
 }
