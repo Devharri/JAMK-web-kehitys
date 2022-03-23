@@ -23,6 +23,13 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function closeFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav responsive") {
+    x.className = "topnav";
+  }
+}
 //</Navbar functions>
 
 // <Scroll smooth>

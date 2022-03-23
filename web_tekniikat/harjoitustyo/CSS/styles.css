@@ -210,7 +210,34 @@ footer p {
     transform: scale(1);
     color: white;
   }
-
+  .osio1{
+    padding-top: 38px;
+    margin: 0;
+  }
+  .osio1 h1{
+    margin: 0;
+  }
+  .osio2{
+    padding-top: 38px;
+    margin: 0;
+  }
+  .osio2 h1{
+    margin: 0;
+  }
+  .osio3{
+    padding-top: 38px;
+    margin: 0;
+  }
+  .osio3 h1{
+    margin: 0;
+  }
+  .osio4{
+    padding-top: 38px;
+    margin: 0;
+  }
+  .osio4 h1{
+    margin: 0;
+  }
   .parallax {
     /* Set a specific height */
     min-height: 8em;
@@ -235,6 +262,18 @@ footer p {
   }
   .topnav a {
     font-size: 1em;
+  }
+  .osio1{
+    padding-top: 29px;
+  }
+  .osio2{
+    padding-top: 29px;
+  }
+  .osio3{
+    padding-top: 29px;
+  }
+  .osio4{
+    padding-top: 29px;
   }
   .parallax {
     /* Set a specific height */
@@ -264,6 +303,18 @@ footer p {
   .topnav a {
     font-size: 1.5em;
   }
+  .osio1{
+    padding-top: 29px;
+  }
+  .osio2{
+    padding-top: 29px;
+  }
+  .osio3{
+    padding-top: 29px;
+  }
+  .osio4{
+    padding-top: 29px;
+  }
   .parallax {
     /* Set a specific height */
     min-height: 16em;
@@ -290,6 +341,18 @@ footer p {
   }
   .topnav a {
     font-size: 1.5em;
+  }
+  .osio1{
+    padding-top: 29px;
+  }
+  .osio2{
+    padding-top: 29px;
+  }
+  .osio3{
+    padding-top: 29px;
+  }
+  .osio4{
+    padding-top: 29px;
   }
   .parallax {
     /* Set a specific height */
