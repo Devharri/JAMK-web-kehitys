@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,6 +6,10 @@ body {
   text-align: center;
   margin: 0 auto;
   background-color: rgb(251, 251, 253);
+  font-family: 'Times New Roman', Times, serif;
+}
+* {
+  box-sizing: border-box;
 }
 .banner {
   background-color: #3aa0cb;
@@ -25,8 +30,10 @@ body {
 }
 .osio1{
   background-color: rgb(58, 160, 203);
-  height: 500px;
+  /*height: 500px;*/
   padding-top: 29px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .osio1 h1 {
   color: rgb(254, 254, 254);
@@ -139,6 +146,24 @@ body {
   -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1); 
 }
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+  height: 260px;
+}
+.main {
+  padding: 20px;
+  float: left;
+  width: 80%; /* The width is 60%, by default */
+  height: 260px;
+  text-align: left;
+  margin: 0;
+}
+.main * {
+  margin: 0;
+}
 footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
@@ -149,7 +174,6 @@ footer a {
   color: rgb(103, 103, 103);
   margin: 0;
 }
-
 footer p {
   padding: 2px;
   margin: 0;
@@ -319,6 +343,9 @@ footer p {
   .osio4{
     padding-top: 29px;
   }
+  .left, .main {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
   /* FOR TABLETS*/
 @media only screen and (min-width: 768px) {
@@ -373,6 +400,12 @@ footer p {
   .osio4{
     padding-top: 29px;
   }
+  .left {
+    width: 20%; /* The width is 20%, by default */
+  }
+  .main {
+    width: 80%; /* The width is 60%, by default */
+  }
 }
 /* FOR DESKTOP*/
 @media only screen and (min-width: 992px) {
@@ -425,5 +458,11 @@ footer p {
   }
   .osio4{
     padding-top: 29px;
+  }
+  .left {
+    width: 20%; /* The width is 20%, by default */
+  }
+  .main {
+    width: 80%; /* The width is 60%, by default */
   }
 }
