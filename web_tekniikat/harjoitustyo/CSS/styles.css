@@ -4,11 +4,11 @@ html {
 body {
   text-align: center;
   margin: 0 auto;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(251, 251, 253);
 }
 .banner {
-  background-color: #0099ff;
-  color: aliceblue;
+  background-color: #3aa0cb;
+  color: rgb(254, 254, 254);
   text-align: center;
 }
 .banner h2 {
@@ -16,30 +16,42 @@ body {
   margin: 0;
   padding-bottom: 0;
   position: relative;
+  text-shadow: 2px 2px 8px #414141;
 }
 .banner h1 {
   padding-top: 0;
   margin: 0;
+  text-shadow: 2px 2px 8px #414141;
 }
 .osio1{
-  background-color: #9fd9ff;
+  background-color: rgb(58, 160, 203);
   height: 500px;
   padding-top: 29px;
+}
+.osio1 h1 {
+  color: rgb(254, 254, 254);
+  text-shadow: 2px 2px 6px #2b2b2b;
+  font-size: 2.5em;
 }
 .osio2{
-  background-color: #0099ff;
+  background-color: rgb(238, 238, 238);
   height: 500px;
   padding-top: 29px;
+}
+.osio2 h1 {
+  color: rgb(103, 103, 103);
+  text-shadow: 2px 2px 6px rgb(255, 255, 255);
+  font-size: 2.5em;
 }
 .osio3{
-  background-color: #9fd9ff;
+  background-color: rgb(58, 160, 203);
   height: 500px;
   padding-top: 29px;
 }
-.osio4{
-  background-color: #0099ff;
-  height: 500px;
-  padding-top: 29px;
+.osio3 h1 {
+  color: rgb(254, 254, 254);
+  text-shadow: 2px 2px 6px #2b2b2b;
+  font-size: 2.5em;
 }
 .parallax {
   /* The image used */
@@ -64,22 +76,22 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0099ff;
+  background-color: rgb(58, 160, 203);
 }
 .topnav a {
   /*width: 4.5em;*/
   /*float: left;*/
   display: inline-block;
-  color: aliceblue;
+  color: rgb(254, 254, 254);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1.5em;
   border-radius: 7%;
   transition: transform .2s;
+  text-shadow: 2px 2px 8px #414141;
 }
 .topnav a:hover {
-  background-color: #006ab1;
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
@@ -103,8 +115,8 @@ body {
   z-index: 99;
   font-size: 18px;
   outline: none;
-  background-color: #0099ff;
-  color: aliceblue;
+  background-color: rgb(58, 160, 203);
+  color: rgb(254, 254, 254);
   cursor: pointer;
   padding: 15px;
   text-decoration: none;
@@ -119,7 +131,7 @@ body {
   0 100px 80px rgba(0, 0, 0, 0.12);
 }
 #goTopBtn:hover {
-  background-color: #0099ff;
+  background-color: rgb(58, 160, 203);
   color: white;
 }
 #goTopBtn:active {
@@ -128,13 +140,13 @@ body {
   transform: scale(1); 
 }
 footer {
-  background-color: #006ab1;
-  color: #D3D3D3;
+  background-color: rgb(238, 238, 238);
+  color: rgb(103, 103, 103);
   margin: 0;
 }
 footer a {
   text-decoration: none;
-  color: #D3D3D3;
+  color: rgb(103, 103, 103);
   margin: 0;
 }
 
