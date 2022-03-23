@@ -121,9 +121,6 @@ body {
 #goTopBtn:hover {
   background-color: #0099ff;
   color: white;
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
 }
 #goTopBtn:active {
   -ms-transform: scale(1); /* IE 9 */
@@ -210,6 +207,22 @@ footer p {
     transform: scale(1);
     color: white;
   }
+  #goTopBtn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 1em;
+    padding: 10px;
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:not(:active) {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+  }
   .parallax {
     /* Full height */
     height: 9em; 
@@ -264,6 +277,22 @@ footer p {
     /* Full height */
     height: 10em;
   }
+  #goTopBtn {
+    bottom: 20px;
+    right: 25px;
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:not(:active) {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+  }
   .osio1{
     padding-top: 29px;
   }
@@ -301,6 +330,22 @@ footer p {
     /* Full height */
     height: 14em;
   }
+  #goTopBtn {
+    bottom: 20px;
+    right: 25px;
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:not(:active) {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+  }
   .osio1{
     padding-top: 29px;
   }
@@ -336,6 +381,22 @@ footer p {
   .parallax {
     /* Full height */
     height: 18em; 
+  }
+  #goTopBtn {
+    bottom: 25px;
+    right: 30px;
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  #goTopBtn:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
   }
   .osio1{
     padding-top: 29px;
