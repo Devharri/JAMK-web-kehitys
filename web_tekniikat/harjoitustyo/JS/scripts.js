@@ -37,12 +37,44 @@ $(document).ready(function () {
 
       // Store hash
       var hash = this.hash;
+      var delayTime = 0;
+
+      //Get browser and use different scrolling delays
+      //Opera
+      if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+        delayTime = 700;
+      }
+      //Edge
+      else if (navigator.userAgent.indexOf("Edg") != -1) {
+        delayTime = 700;
+      }
+      //Chrome, delay is delay before function
+      else if (navigator.userAgent.indexOf("Chrome") != -1) {
+        delayTime = 50;
+      }
+      //Safari, delay is animation time
+      else if (navigator.userAgent.indexOf("Safari") != -1) {
+        delayTime = 700;
+      }
+      //Firefox
+      else if (navigator.userAgent.indexOf("Firefox") != -1) {
+        delayTime = 700;
+      }
+      //IE
+      else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
+      {
+        delayTime = 700;
+      }
+      //Unknown
+      else {
+        delayTime = 700;
+      }
+
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 700, function () {
+      }, delayTime, function () {
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;

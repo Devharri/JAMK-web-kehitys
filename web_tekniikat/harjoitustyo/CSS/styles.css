@@ -132,12 +132,18 @@ body {
 }
 footer {
   background-color: #006ab1;
-  padding: 1em;
   color: #D3D3D3;
+  margin: 0;
 }
 footer a {
   text-decoration: none;
   color: #D3D3D3;
+  margin: 0;
+}
+
+footer p {
+  padding: 2px;
+  margin: 0;
 }
 /* FOR MOBILE PHONES*/
 @media only screen and (max-width: 476px) {
@@ -166,6 +172,8 @@ footer a {
 
   .topnav a {
     display: none;
+    padding: 10px 16px;
+    font-size: 1em;
   }
 
   .topnav a.icon {
@@ -188,6 +196,21 @@ footer a {
     display: block;
     text-align: left;
   }
+
+  .topnav.responsive a:hover {
+    background-color: #006ab1;
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+    color: white;
+  }
+  .topnav.responsive a:active {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1);
+    color: white;
+  }
+
   .parallax {
     /* Set a specific height */
     min-height: 8em;
