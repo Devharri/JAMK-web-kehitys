@@ -31,26 +31,30 @@ body {
   background-color: #3aa0cb;
   margin: 0;
 }
-.content{
+.content1{
   width: 70%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .osio1 .responsive_left {
-  padding: 50px 20px;
-  float: left;
+  /*padding: 50px 20px;*/
+  height: 100%;
+  /*float: left;*/
   width: 30%; /* The width is 20%, by default */
+  margin: auto;
 }
-.osio1 div.gallery img {
+.osio1 .responsive_left img {
   width: 100%;
-  max-width: 260px;
   height: auto;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.267), 0 6px 20px 0 rgba(0, 0, 0, 0.342);
   border-radius: 5px;
 }
 .osio1 .responsive_right {
   padding: 50px 20px;
-  float: left;
+  /*float: left;*/
   width: 70%; /* The width is 20%, by default */
 }
 .osio1 .responsive_right h1 {
@@ -70,9 +74,10 @@ body {
   font-weight: bold;
   text-shadow: 2px 2px 8px #414141;
   text-align: left;
-  padding-left: 20px;
+  text-align: justify;
 }
-.osio1 .responsive_right p {
+
+.osio1 .responsive_right .aboutText {
   margin: 0;
   color: rgb(65, 65, 65);
   font-family:'Courier New', Courier, monospace;
@@ -83,15 +88,15 @@ body {
   padding-left: 100px;
   text-align: justify;
 }
-.osio1 .responsive_right a {
+.osio1 .responsive_right .aboutText a {
   display: inline-block;
   text-decoration: underline;
-  margin: 0;
+  font-weight: bolder;
   color: rgb(65, 65, 65);
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'Courier New', Courier, monospace;
   transition: transform .1s;
 }
-.osio1 .responsive_right a:hover {
+.osio1 .responsive_right .aboutText a:hover {
   -ms-transform: scale(1.025); /* IE 9 */
   -webkit-transform: scale(1.025); /* Safari 3-8 */
   transform: scale(1.025);
@@ -100,6 +105,12 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.content2{
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 .osio2{
   background-color: #eeeeee;
@@ -149,8 +160,6 @@ body {
   background-color: rgb(58, 160, 203);
 }
 .topnav a {
-  /*width: 4.5em;*/
-  /*float: left;*/
   display: inline-block;
   color: rgb(254, 254, 254);
   text-align: center;
@@ -229,7 +238,7 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 100%;
   }
   .banner h2 {
@@ -309,15 +318,17 @@ footer p {
   }
   .osio1{
     margin: 0;
+    padding-bottom: 20px;
   }
   .osio1 h1{
     margin: 0;
   }
   .osio1 .responsive_left, .osio1 .responsive_right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding: 20px 0 0 0;
   }
-  .osio1 div.gallery img {
-    width: 50%;
+  .osio1 .responsive_left img{
+    max-width: 50%;
   }
   .osio2{
     margin: 0;
@@ -337,7 +348,7 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 100%;
   }
   .banner h2 {
@@ -384,7 +395,7 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 90%;
   }
   .banner {
@@ -430,7 +441,7 @@ footer p {
     width: 70%; /* The width is 60%, by default */
   }
   .osio1 .responsive_left img{
-    max-width: 100%;
+    max-width: 260px;
   }
 }
 /* FOR DESKTOP*/
@@ -438,7 +449,7 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 80%;
   }
   .banner {
@@ -483,7 +494,7 @@ footer p {
     width: 70%; /* The width is 60%, by default */
   }
   .osio1 .responsive_left img{
-    max-width: 100%;
+    max-width: 260px;
   }
 }
 /* FOR LARGE DESKTOP*/
@@ -491,19 +502,20 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 70%;
   }
   .banner {
     font-size: 2em;
   }
   .banner h2 {
-    margin-bottom: -45px;
-    font-size: 1.5em;
-    right: 80px;
+    margin-bottom: -100px;
+    font-size: 3.5em;
+    right: 152px;
   }
   .banner h1 {
-    font-size: 3.5em;
+    letter-spacing: -2px;
+    font-size: 7em;
   }
   .topnav a {
     font-size: 1.5em;
@@ -536,7 +548,7 @@ footer p {
     width: 70%; /* The width is 60%, by default */
   }
   .osio1 .responsive_left img{
-    max-width: 100%;
+    max-width: 260px;
   }
 }
 /* FOR x-LARGE DESKTOP*/
@@ -544,7 +556,7 @@ footer p {
   body {
     width: 100%;
   }
-  .content{
+  .content1{
     width: 60%;
   }
   .banner {
@@ -590,6 +602,6 @@ footer p {
     width: 70%; /* The width is 60%, by default */
   }
   .osio1 .responsive_left img{
-    max-width: 100%;
+    max-width: 260px;
   }
 }
