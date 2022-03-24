@@ -29,7 +29,7 @@ body {
   text-shadow: 2px 2px 8px #414141;
 }
 .osio1{
-  background-color: rgb(58, 160, 203);
+  background-color: #3aa0cb;
   /*height: 500px;*/
   padding-top: 29px;
   margin: 0;
@@ -39,6 +39,34 @@ body {
   color: rgb(254, 254, 254);
   text-shadow: 2px 2px 6px #2b2b2b;
   font-size: 2.5em;
+  margin-bottom: 5px;
+}
+.osio1 .left {
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 30%; /* The width is 20%, by default */
+}
+
+.osio1 .left img{
+  margin: 10px auto;
+  max-width: 100%;
+  box-shadow: 4px 4px 10px #2b2b2b;
+  border-radius: 8px;
+}
+.osio1 .main {
+  padding: 20px;
+  float: left;
+  width: 70%; /* The width is 60%, by default */
+  text-align: left;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(254, 254, 254);
+  text-shadow: 2px 2px 6px #414141;
+  font-size: 1.5em;
+}
+.osio1 .main * {
+  margin: 0;
 }
 .osio2{
   background-color: #eeeeee;
@@ -146,24 +174,7 @@ body {
   -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1); 
 }
-.left {
-  background-color: #2196F3;
-  padding: 20px;
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-  height: 260px;
-}
-.main {
-  padding: 20px;
-  float: left;
-  width: 80%; /* The width is 60%, by default */
-  height: 260px;
-  text-align: left;
-  margin: 0;
-}
-.main * {
-  margin: 0;
-}
+
 footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
@@ -271,6 +282,12 @@ footer p {
   .osio1 h1{
     margin: 0;
   }
+  .osio1 .left, .osio1 .main {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .osio1 .left img{
+    max-width:50%;
+  }
   .osio2{
     padding-top: 38px;
     margin: 0;
@@ -343,8 +360,11 @@ footer p {
   .osio4{
     padding-top: 29px;
   }
-  .left, .main {
+  .osio1 .left, .osio1 .main {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .osio1 .left img{
+    max-width:50%;
   }
 }
   /* FOR TABLETS*/
@@ -400,11 +420,14 @@ footer p {
   .osio4{
     padding-top: 29px;
   }
-  .left {
-    width: 20%; /* The width is 20%, by default */
+  .osio1 .left {
+    width: 30%; /* The width is 20%, by default */
   }
-  .main {
-    width: 80%; /* The width is 60%, by default */
+  .osio1 .main {
+    width: 70%; /* The width is 60%, by default */
+  }
+  .osio1 .left img{
+    max-width: 100%;
   }
 }
 /* FOR DESKTOP*/
@@ -459,10 +482,13 @@ footer p {
   .osio4{
     padding-top: 29px;
   }
-  .left {
-    width: 20%; /* The width is 20%, by default */
+  .osio1 .left {
+    width: 30%; /* The width is 20%, by default */
   }
-  .main {
-    width: 80%; /* The width is 60%, by default */
+  .osio1 .main {
+    width: 70%; /* The width is 60%, by default */
+  }
+  .osio1 .left img{
+    max-width: 100%;
   }
 }
