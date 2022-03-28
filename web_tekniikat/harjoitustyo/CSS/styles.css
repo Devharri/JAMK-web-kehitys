@@ -168,8 +168,9 @@ body {
   display: block;
   width: 100%;
   padding: 5px;
-  background-color: rgb(58, 160, 203);
-  color: rgb(254, 254, 254);
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(65, 65, 65);
+  color: #eeeeee;
   text-decoration: none;
   transition: transform .1s;
   position:absolute;                 
@@ -178,11 +179,48 @@ body {
 }
 .card-button:hover {
   transform: scale(1.025);
-  background-color: rgb(65, 65, 65);
-  color: #eeeeee;
+  background-color: rgb(58, 160, 203);
+  color: rgb(254, 254, 254);
   border-radius: 5px;
 }
-
+.content4{
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.osio4{
+  background-color: #eeeeee;
+}
+.osio4 h1 {
+  color: rgb(103, 103, 103);
+  text-shadow: 2px 2px 6px rgb(255, 255, 255);
+  font-size: 3em;
+  margin: 0;
+  padding: 7px;
+}
+.osio4 .aboutText {
+  margin: 0;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+}
+.osio4 .aboutText a {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  transition: transform .1s;
+}
+.osio4 .aboutText a:hover {
+  -ms-transform: scale(1.025); /* IE 9 */
+  -webkit-transform: scale(1.025); /* Safari 3-8 */
+  transform: scale(1.025);
+}
 .parallax {
   /* The image used */
   background-image: url("../images/Code-Head-Text.svg");
@@ -570,6 +608,12 @@ footer p {
   .content2{
     width: 45%;
   }
+  .content3{
+    width: 60%;
+  }
+  .content4{
+    width: 45%;
+  }
   .banner {
     font-size: 2em;
   }
@@ -625,6 +669,12 @@ footer p {
     width: 70%;
   }
   .content2{
+    width: 45%;
+  }
+  .content3{
+    width: 60%;
+  }
+  .content4{
     width: 45%;
   }
   .banner {
