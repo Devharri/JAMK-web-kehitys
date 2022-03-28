@@ -40,7 +40,7 @@ body {
   justify-content: center;
 }
 .osio1 .responsive_left {
-  /*padding: 50px 20px;*/
+  padding: 50px 20px;
   height: 100%;
   /*float: left;*/
   width: 30%; /* The width is 20%, by default */
@@ -76,31 +76,6 @@ body {
   text-align: left;
   text-align: justify;
 }
-
-.osio1 .responsive_right .aboutText {
-  margin: 0;
-  color: rgb(65, 65, 65);
-  font-family:'Courier New', Courier, monospace;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: left;
-  padding-top: 50px;
-  padding-left: 100px;
-  text-align: justify;
-}
-.osio1 .responsive_right .aboutText a {
-  display: inline-block;
-  text-decoration: underline;
-  font-weight: bolder;
-  color: rgb(65, 65, 65);
-  font-family:'Courier New', Courier, monospace;
-  transition: transform .1s;
-}
-.osio1 .responsive_right .aboutText a:hover {
-  -ms-transform: scale(1.025); /* IE 9 */
-  -webkit-transform: scale(1.025); /* Safari 3-8 */
-  transform: scale(1.025);
-}
 .clearfix:after {
   content: "";
   display: table;
@@ -108,13 +83,12 @@ body {
 }
 .content2{
   display: inline-block;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
 .osio2{
   background-color: #eeeeee;
-  height: 500px;
 }
 .osio2 h1 {
   color: rgb(103, 103, 103);
@@ -122,6 +96,29 @@ body {
   font-size: 3em;
   margin: 0;
   padding: 7px;
+}
+.osio2 .aboutText {
+  margin: 0;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  text-align: justify;
+}
+.osio2 .aboutText a {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  transition: transform .1s;
+}
+.osio2 .aboutText a:hover {
+  -ms-transform: scale(1.025); /* IE 9 */
+  -webkit-transform: scale(1.025); /* Safari 3-8 */
+  transform: scale(1.025);
 }
 .osio3{
   background-color: rgb(58, 160, 203);
@@ -241,6 +238,9 @@ footer p {
   .content1{
     width: 100%;
   }
+  .content2{
+    width: 100%;
+  }
   .banner h2 {
     margin-bottom: -25px;
     font-size: 2em;
@@ -351,6 +351,9 @@ footer p {
   .content1{
     width: 100%;
   }
+  .content2{
+    width: 100%;
+  }
   .banner h2 {
     margin-bottom: -30px;
     font-size: 2.25em;
@@ -397,6 +400,9 @@ footer p {
   }
   .content1{
     width: 90%;
+  }
+  .content2{
+    width: 75%;
   }
   .banner {
     font-size: 2em;
@@ -452,6 +458,9 @@ footer p {
   .content1{
     width: 80%;
   }
+  .content2{
+    width: 65%;
+  }
   .banner {
     font-size: 2em;
   }
@@ -505,6 +514,9 @@ footer p {
   .content1{
     width: 70%;
   }
+  .content2{
+    width: 45%;
+  }
   .banner {
     font-size: 2em;
   }
@@ -557,7 +569,10 @@ footer p {
     width: 100%;
   }
   .content1{
-    width: 60%;
+    width: 70%;
+  }
+  .content2{
+    width: 45%;
   }
   .banner {
     font-size: 2em;
