@@ -30,6 +30,19 @@ function closeFunction() {
     x.className = "topnav";
   }
 }
+
+
+function Tosection(secNro){
+  var d = document.getElementById('TESTIDIV');
+  var testipiilo = document.getElementById('TESTIPIILO');
+  testipiilo.style.opacity = "1.0";
+  d.style.display = "flex";
+  d.style.top = "0px";
+  d.style.height = "auto";
+  nimi = "section"+secNro;
+  document.getElementById(nimi).scrollIntoView();
+}
+
 //</Navbar functions>
 
 // <Scroll smooth>
@@ -134,8 +147,6 @@ function doSomething(scrollPos) {
     } else{
       d.style.top = "0px";
       d.style.height = "auto";
-      
-
     }
 }
 

@@ -32,10 +32,11 @@ body {
   margin: 0;
 }
 .content1{
+  z-index: 98;
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -257,6 +258,7 @@ body {
   border-radius: 7%;
   transition: transform .2s;
   text-shadow: 2px 2px 8px #414141;
+  cursor:pointer;
 }
 .topnav a:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -311,6 +313,8 @@ footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
   margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 footer a {
   text-decoration: none;
@@ -318,6 +322,7 @@ footer a {
   margin: 0;
 }
 footer p {
+  font-family:'Courier New', Courier, monospace;
   padding: 2px;
   margin: 0;
 }
