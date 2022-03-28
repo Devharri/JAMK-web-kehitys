@@ -120,9 +120,15 @@ body {
   -webkit-transform: scale(1.025); /* Safari 3-8 */
   transform: scale(1.025);
 }
+
+.content3{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
 .osio3{
   background-color: rgb(58, 160, 203);
-  height: 500px;
 }
 .osio3 h1 {
   color: rgb(254, 254, 254);
@@ -131,6 +137,25 @@ body {
   margin: 0;
   padding: 7px;
 }
+/* Container for flexboxes */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+/* Create four equal columns */
+.card-column {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
+  border-radius: 5px;
+  color: rgb(65, 65, 65);
+}
+.card-column:hover {
+  transform: scale(1.05);
+}
+
 .parallax {
   /* The image used */
   background-image: url("../images/Code-Head-Text.svg");
@@ -155,6 +180,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: rgb(58, 160, 203);
+  z-index: 99;
 }
 .topnav a {
   display: inline-block;
