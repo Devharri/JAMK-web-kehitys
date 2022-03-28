@@ -151,9 +151,36 @@ body {
   transition: transform .2s;
   border-radius: 5px;
   color: rgb(65, 65, 65);
+  width: 250px;
+  position: relative;
+}
+.card-column img {
+  padding: 30px;
+  width: 100%;
 }
 .card-column:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
+}
+.card-text {
+  padding: 2px 16px 16px 16px;
+}
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(58, 160, 203);
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  transition: transform .1s;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+.card-button:hover {
+  transform: scale(1.025);
+  background-color: rgb(65, 65, 65);
+  color: #eeeeee;
+  border-radius: 5px;
 }
 
 .parallax {
