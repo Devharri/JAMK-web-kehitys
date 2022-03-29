@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="HideSections()">
     <!-- Banner -->
     <section class="banner" id="top">
         <div>
@@ -28,9 +28,9 @@
     </section>
     <!-- Navbar -->
     <div class="topnav" id="myTopnav">
-        <a href="#section1" onclick="closeFunction()">About me</a>
-        <a href="#section2" onclick="closeFunction()">Portfolio</a>
-        <a href="#section3" onclick="closeFunction()">More</a>
+        <a onclick="closeFunction(), Tosection(2)">Studies</a>
+        <a onclick="closeFunction(), Tosection(3)">Portfolio</a>
+        <a onclick="closeFunction(), Tosection(4)">About me</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -45,25 +45,69 @@
     </div>
     <!-- 1st section -->
     <section class="osio1" id="section1">
-        <h1>About me</h1>
-
-        <div style="overflow:auto">
-            <div class="left">
-                <img src="images/omakuva.png" alt="omakuva" style="width:100%">
+        <div class="content1" id="TESTIDIV">
+            <div class="responsive_left">
+                <img src="images/omakuva.png" alt="omakuva">
             </div>
-            
-            <div class="main">
-                <p>Moikka! Mun nimi on Harri ja olen todella kiinnostunut web- ja sovelluskehityksestä.</p>
-
+            <div class="responsive_right">
+                <div class="aboutHeader">
+                    <h1>My name is Harri</h1>
+                    <h2>And I'm very thrilled about coding!
+                    </h2>
+                </div>
             </div>
         </div>
-
+        <div class="clearfix"></div>
     </section>
     <!-- 2nd section -->
     <section class="osio2" id="section2">
-        <h1>Portfolio</h1>
-        <p>Kortteja tehdyistä demoista & projekteista & github repo tästä portfoliosta</p>
-        <p>ehkä bootstrapin kortit, vähemmän säätämistä??</p>
+        <div class="content2" id="TESTIPIILO">
+            <h1>So what do I study</h1>
+            <div class="aboutText" >
+                <p>Currently I'm studying open studies in JAMK*. One set of courses is <a
+                        href="https://amp.jamk.fi/asio/kurssiilmo/jamk/index.php?ss_lang=fi&asio=Zmt1cnNzaW50aWVkb3Q7Yzc3MjY5O3M2NjNkZmI1NDQ0NDIzYWRkMDExNzUxZjg0YzcwNmEzYjtsZmk7Z0FBO3I%3D"
+                        target="_blank">Digiosaaja
+                    </a>(30 credits). Some courses included: <br>
+                </p>
+                <ul>
+                    <li>Python (basics of programming)</li>
+                    <li>CSS, HTML, JS (basics of web dev)</li>
+                    <li>Databases (basics of SQL)</li>
+                    <li>Full Stack developing</li>
+                    <li>Cyper security (basics of cyber sec)</li>
+                    <li>IT-networks (basics of networks)</li>
+                </ul>
+
+                <p><small><i><a href="https://www.jamk.fi/fi" target="_blank">*Jyväskylä University Of Applied
+                                Sciences</a></i></small></p>
+                <p>In addition I'm studiyng free open studies in Metropolia*. One set of courses is <a
+                        href="https://hakija.oma.metropolia.fi/#3234" target="_blank">Minustako
+                        Full stack -osaaja?</a> Some courses included: </p>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>JS-basics</li>
+                    <li>React.js fundamentals</li>
+                    <li>Databases (basics of SQL)</li>
+                </ul>
+                <p><small><i><a href="https://www.metropolia.fi/fi/" target="_blank">*Metropolia University of Applied
+                                Sciences</a></i></small>
+                </p>
+                <p>
+                    In additon I'm learning:</p>
+                <ul>
+                    <li>C#</li>
+                    <li>.NET</li>
+                    <li>ASP.NET Core</li>
+                </ul>
+                <p>
+                    from free educational sources from internet. I
+                    actually started with C#, I like the syntax and the environment built around
+                    .NET-framework.<br>After all SQL database studies from open studies in Universities, I'm building
+                    demos
+                    with MondoDB and C#! That's something I like alot!
+                </p>
+            </div>
+        </div>
     </section>
     <!-- parallax -->
     <!-- parallax -->
@@ -76,8 +120,80 @@
     </div>
     <!-- 3rd section -->
     <section class="osio3" id="section3">
-        <h1>More</h1>
+
+        <div class="content3">
+            <h1>Portfolio</h1>
+
+            <div class="card-row">
+                <div class="card-column" style="background-color:#eeeeee">
+                    <img src="images/1277313898.svg" alt="Avatar">
+                    <div class="card-text">
+                        <h4><b>MongoDBDemoApp</b></h4>
+                        <p>MongoDB Atlas CRUD with Console application and C#</p>
+                    </div>
+                    <a class="card-button" href="https://github.com/Devharri/MongoDBDemoApp" target="_blank">GitHub</a>
+                </div>
+
+                <div class="card-column" style="background-color:#eeeeee">
+                    <img src="images/1514668424.svg" alt="Avatar">
+                    <div class="card-text">
+                        <h4><b>CarGameDemo </b></h4>
+                        <p>Car game demo with Windows forms and C#</p>
+                    </div>
+                    <a class="card-button" href="https://github.com/Devharri/CarGameDemo" target="_blank">GitHub</a>
+
+                </div>
+
+                <div class="card-column" style="background-color:#eeeeee">
+                    <img src="images/sheikh-tuhin-Box.svg" alt="Avatar">
+                    <div class="card-text">
+                        <h4><b>SQLDataAccessDemoDapper</b></h4>
+                        <p>MS SQL CRUD demo with Windows forms and C#</p>
+                    </div>
+                    <a class="card-button" href="https://github.com/Devharri/SQLDataAccessDemoDapper"
+                        target="_blank">GitHub</a>
+                </div>
+
+                <div class="card-column" style="background-color:#eeeeee">
+                    <img src="images/rg1024-Cartoon-Camera.svg" alt="Avatar">
+                    <div class="card-text">
+                        <h4><b>MPEG-video-stream</b></h4>
+                        <p>MPEG-video stream with Windows forms and C#</p>
+                    </div>
+                    <a class="card-button" href="https://github.com/Devharri/MPEG-video-stream"
+                        target="_blank">GitHub</a>
+                </div>
+                <div class="card-column" style="background-color:#eeeeee">
+                    <img src="images/web_logo.svg" alt="Avatar">
+                    <div class="card-text">
+                        <h4><b>Web Portfolio</b></h4>
+                        <p>This web site you are looking at!</p>
+                    </div>
+                    <a class="card-button" href="https://github.com/Devharri/JAMK-web-kehitys"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="osio4" id="section4">
+        <div class="content4">
+            <h1>More about me</h1>
+
+
+
+            <div class="aboutText">
+                <p>More about me coming soon!</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="parallax">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 275">
+            <path fill="#eeeeee" fill-opacity="1"
+                d="M0,128L60,112C120,96,240,64,360,74.7C480,85,600,139,720,176C840,213,960,235,1080,229.3C1200,224,1320,192,1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </div>
     <!-- footer  -->
     <footer>
         <p>Author: Harri Honkanen</p>

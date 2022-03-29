@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Bungee Inline
-- Font Author: Copyright 2008 The Bungee Project Authors (david@djr.com)
-- Font Source: http://fonts.gstatic.com/s/bungeeinline/v9/Gg8zN58UcgnlCweMrih332VuDGJ1-FEglsc.ttf
+- Font Title: Kreon
+- Font Author: Copyright 2018 The Kreon Project Authors (https://github.com/googlefonts/kreon), with Reserved Font Name "Kreon"
+- Font Source: http://fonts.gstatic.com/s/kreon/v30/t5t9IRIUKY-TFF_LW5lnMR3v2DnvUNimejUfp2dWNg.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

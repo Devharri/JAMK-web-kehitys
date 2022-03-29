@@ -30,6 +30,19 @@ function closeFunction() {
     x.className = "topnav";
   }
 }
+
+
+function Tosection(secNro){
+  var d = document.getElementById('TESTIDIV');
+  var testipiilo = document.getElementById('TESTIPIILO');
+  testipiilo.style.opacity = "1.0";
+  d.style.display = "flex";
+  d.style.top = "0px";
+  d.style.height = "auto";
+  nimi = "section"+secNro;
+  document.getElementById(nimi).scrollIntoView();
+}
+
 //</Navbar functions>
 
 // <Scroll smooth>
@@ -90,3 +103,60 @@ $(document).ready(function () {
   });
 });
 // </Scroll smooth>
+
+
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function HideSections() {
+  var d = document.getElementById('TESTIDIV');
+  var testipiilo = document.getElementById('TESTIPIILO');
+  d.style.display = "none";
+  d.style.height = "0px";
+  testipiilo.style.opacity = "0.0";
+}
+
+function doSomething(scrollPos) {
+  var d = document.getElementById('TESTIDIV');
+  var testipiilo = document.getElementById('TESTIPIILO');
+    //  block of code to be executed if the condition is true
+    //  block of code to be executed if the condition is false
+    
+    if (scrollPos >= 5) {
+      calcoffset1 = scrollPos;
+      d.style.display = "flex";
+      d.style.height = calcoffset1+"px";
+    } else {
+      d.style.height = "0px";
+    }
+
+    if (scrollPos > 100 && scrollPos < 430){
+      offsetti = scrollPos*2;
+      testipiilo.style.opacity = "0."+ offsetti;
+    } else if (scrollPos >= 430){
+      testipiilo.style.opacity = "1.0";
+    } else {
+      testipiilo.style.opacity = "0.0";
+    }
+
+
+    if (scrollPos <= 430) {
+      calcoffset = (600-(scrollPos*1.4));
+      d.style.position ="relative";
+      d.style.top = calcoffset+"px";
+    } else{
+      d.style.top = "0px";
+      d.style.height = "auto";
+    }
+}
+
+document.addEventListener('scroll', function(e) {
+  lastKnownScrollPosition = window.scrollY;
+
+  
+    window.requestAnimationFrame(function() {
+      doSomething(lastKnownScrollPosition);
+      
+    });
+  
+});

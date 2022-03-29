@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -30,63 +29,198 @@ body {
 }
 .osio1{
   background-color: #3aa0cb;
-  /*height: 500px;*/
-  padding-top: 29px;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.osio1 h1 {
-  color: rgb(254, 254, 254);
-  text-shadow: 2px 2px 6px #2b2b2b;
-  font-size: 2.5em;
-  margin-bottom: 5px;
+.content1{
+  z-index: 98;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.osio1 .left {
-  padding: 0;
-  margin: 0;
-  float: left;
+.osio1 .responsive_left {
+  padding: 50px 20px;
+  height: 100%;
+  /*float: left;*/
   width: 30%; /* The width is 20%, by default */
+  margin: auto;
 }
-
-.osio1 .left img{
-  margin: 10px auto;
-  max-width: 100%;
-  box-shadow: 4px 4px 10px #2b2b2b;
-  border-radius: 8px;
+.osio1 .responsive_left img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.267), 0 6px 20px 0 rgba(0, 0, 0, 0.342);
+  border-radius: 5px;
 }
-.osio1 .main {
-  padding: 20px;
-  float: left;
-  width: 70%; /* The width is 60%, by default */
-  text-align: left;
+.osio1 .responsive_right {
+  padding: 50px 20px;
+  /*float: left;*/
+  width: 70%; /* The width is 20%, by default */
+}
+.osio1 .responsive_right h1 {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
   color: rgb(254, 254, 254);
-  text-shadow: 2px 2px 6px #414141;
-  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4em;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px #414141;
+  text-align: left;
 }
-.osio1 .main * {
+.osio1 .responsive_right h2 {
   margin: 0;
+  color: rgb(254, 254, 254);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #414141;
+  text-align: left;
+  text-align: justify;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content2{
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 .osio2{
   background-color: #eeeeee;
-  height: 500px;
-  padding-top: 29px;
 }
 .osio2 h1 {
   color: rgb(103, 103, 103);
   text-shadow: 2px 2px 6px rgb(255, 255, 255);
-  font-size: 2.5em;
+  font-size: 3em;
+  margin: 0;
+  padding: 7px;
+}
+.osio2 .aboutText {
+  margin: 0;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  text-align: justify;
+}
+.osio2 .aboutText a {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  transition: transform .1s;
+}
+.osio2 .aboutText a:hover {
+  -ms-transform: scale(1.025); /* IE 9 */
+  -webkit-transform: scale(1.025); /* Safari 3-8 */
+  transform: scale(1.025);
+}
+
+.content3{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 .osio3{
   background-color: rgb(58, 160, 203);
-  height: 500px;
-  padding-top: 29px;
 }
 .osio3 h1 {
   color: rgb(254, 254, 254);
   text-shadow: 2px 2px 6px #2b2b2b;
-  font-size: 2.5em;
+  font-size: 3em;
+  margin: 0;
+  padding: 7px;
+}
+/* Container for flexboxes */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+/* Create four equal columns */
+.card-column {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
+  border-radius: 5px;
+  color: rgb(65, 65, 65);
+  width: 250px;
+  position: relative;
+}
+.card-column img {
+  padding: 30px;
+  width: 100%;
+}
+.card-column:hover {
+  transform: scale(1.025);
+}
+.card-text {
+  padding: 2px 16px 16px 16px;
+}
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(65, 65, 65);
+  color: #eeeeee;
+  text-decoration: none;
+  transition: transform .1s;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+.card-button:hover {
+  transform: scale(1.025);
+  background-color: rgb(58, 160, 203);
+  color: rgb(254, 254, 254);
+  border-radius: 5px;
+}
+.content4{
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.osio4{
+  background-color: #eeeeee;
+}
+.osio4 h1 {
+  color: rgb(103, 103, 103);
+  text-shadow: 2px 2px 6px rgb(255, 255, 255);
+  font-size: 3em;
+  margin: 0;
+  padding: 7px;
+}
+.osio4 .aboutText {
+  margin: 0;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+}
+.osio4 .aboutText a {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(65, 65, 65);
+  font-family:'Courier New', Courier, monospace;
+  transition: transform .1s;
+}
+.osio4 .aboutText a:hover {
+  -ms-transform: scale(1.025); /* IE 9 */
+  -webkit-transform: scale(1.025); /* Safari 3-8 */
+  transform: scale(1.025);
 }
 .parallax {
   /* The image used */
@@ -112,10 +246,9 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: rgb(58, 160, 203);
+  z-index: 99;
 }
 .topnav a {
-  /*width: 4.5em;*/
-  /*float: left;*/
   display: inline-block;
   color: rgb(254, 254, 254);
   text-align: center;
@@ -125,11 +258,13 @@ body {
   border-radius: 7%;
   transition: transform .2s;
   text-shadow: 2px 2px 8px #414141;
+  cursor:pointer;
 }
 .topnav a:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
+  text-shadow: 4px 4px 9px #2b2b2b;
   color: white;
 }
 .topnav a:active {
@@ -174,11 +309,12 @@ body {
   -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1); 
 }
-
 footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 footer a {
   text-decoration: none;
@@ -186,6 +322,7 @@ footer a {
   margin: 0;
 }
 footer p {
+  font-family:'Courier New', Courier, monospace;
   padding: 2px;
   margin: 0;
 }
@@ -194,7 +331,12 @@ footer p {
   body {
     width: 100%;
   }
-
+  .content1{
+    width: 100%;
+  }
+  .content2{
+    width: 100%;
+  }
   .banner h2 {
     margin-bottom: -25px;
     font-size: 2em;
@@ -203,23 +345,19 @@ footer p {
   .banner h1 {
     font-size: 4em;
   }
-
   .navbar li {
     display: block;
     float: none;
   }
-
   .navbar li a {
     text-align: center;
     margin: 0 auto;
   }
-
   .topnav a {
     display: none;
     padding: 10px 16px;
     font-size: 1em;
   }
-
   .topnav a.icon {
     float: right;
     display: block;
@@ -240,7 +378,6 @@ footer p {
     display: block;
     text-align: left;
   }
-
   .topnav.responsive a:hover {
     background-color: #006ab1;
     -ms-transform: scale(1.05); /* IE 9 */
@@ -276,46 +413,43 @@ footer p {
     height: 9em; 
   }
   .osio1{
-    padding-top: 38px;
     margin: 0;
+    padding-bottom: 20px;
   }
   .osio1 h1{
     margin: 0;
   }
-  .osio1 .left, .osio1 .main {
+  .osio1 .responsive_left, .osio1 .responsive_right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding: 20px 0 0 0;
   }
-  .osio1 .left img{
-    max-width:50%;
+  .osio1 .responsive_left img{
+    max-width: 50%;
   }
   .osio2{
-    padding-top: 38px;
     margin: 0;
   }
   .osio2 h1{
     margin: 0;
   }
   .osio3{
-    padding-top: 38px;
     margin: 0;
   }
   .osio3 h1{
-    margin: 0;
-  }
-  .osio4{
-    padding-top: 38px;
-    margin: 0;
-  }
-  .osio4 h1{
     margin: 0;
   }
 }
 /* FOR MOBILE PHONES*/  
 @media only screen and (min-width: 476px) {
   body {
-    width: 95%;
+    width: 100%;
   }
- 
+  .content1{
+    width: 100%;
+  }
+  .content2{
+    width: 100%;
+  }
   .banner h2 {
     margin-bottom: -30px;
     font-size: 2.25em;
@@ -348,29 +482,23 @@ footer p {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1); 
   }
-  .osio1{
-    padding-top: 29px;
-  }
-  .osio2{
-    padding-top: 29px;
-  }
-  .osio3{
-    padding-top: 29px;
-  }
-  .osio4{
-    padding-top: 29px;
-  }
-  .osio1 .left, .osio1 .main {
+  .osio1 .responsive_left, .osio1 .responsive_right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .osio1 .left img{
-    max-width:50%;
+  .osio1 .responsive_left img{
+    max-width: 50%;
   }
 }
   /* FOR TABLETS*/
 @media only screen and (min-width: 768px) {
   body {
-    width: 95%;
+    width: 100%;
+  }
+  .content1{
+    width: 90%;
+  }
+  .content2{
+    width: 75%;
   }
   .banner {
     font-size: 2em;
@@ -408,32 +536,26 @@ footer p {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1); 
   }
-  .osio1{
-    padding-top: 29px;
-  }
-  .osio2{
-    padding-top: 29px;
-  }
-  .osio3{
-    padding-top: 29px;
-  }
-  .osio4{
-    padding-top: 29px;
-  }
-  .osio1 .left {
+  .osio1 .responsive_left {
     width: 30%; /* The width is 20%, by default */
   }
-  .osio1 .main {
+  .osio1 .responsive_right {
     width: 70%; /* The width is 60%, by default */
   }
-  .osio1 .left img{
-    max-width: 100%;
+  .osio1 .responsive_left img{
+    max-width: 260px;
   }
 }
 /* FOR DESKTOP*/
 @media only screen and (min-width: 992px) {
   body {
+    width: 100%;
+  }
+  .content1{
     width: 80%;
+  }
+  .content2{
+    width: 65%;
   }
   .banner {
     font-size: 2em;
@@ -470,25 +592,139 @@ footer p {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1); 
   }
-  .osio1{
-    padding-top: 29px;
-  }
-  .osio2{
-    padding-top: 29px;
-  }
-  .osio3{
-    padding-top: 29px;
-  }
-  .osio4{
-    padding-top: 29px;
-  }
-  .osio1 .left {
+  .osio1 .responsive_left {
     width: 30%; /* The width is 20%, by default */
   }
-  .osio1 .main {
+  .osio1 .responsive_right {
     width: 70%; /* The width is 60%, by default */
   }
-  .osio1 .left img{
-    max-width: 100%;
+  .osio1 .responsive_left img{
+    max-width: 260px;
+  }
+}
+/* FOR LARGE DESKTOP*/
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .content1{
+    width: 70%;
+  }
+  .content2{
+    width: 45%;
+  }
+  .content3{
+    width: 60%;
+  }
+  .content4{
+    width: 45%;
+  }
+  .banner {
+    font-size: 2em;
+  }
+  .banner h2 {
+    margin-bottom: -100px;
+    font-size: 3.5em;
+    right: 152px;
+  }
+  .banner h1 {
+    letter-spacing: -2px;
+    font-size: 7em;
+  }
+  .topnav a {
+    font-size: 1.5em;
+  }
+  .parallax {
+    /* Full height */
+    height: 18em; 
+  }
+  #goTopBtn {
+    bottom: 25px;
+    right: 30px;
+    font-size: 1.2em;
+    padding: 15px;
+    transition: transform .2s;
+  }
+  #goTopBtn:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+  }
+  .osio1 .responsive_left {
+    width: 30%; /* The width is 20%, by default */
+  }
+  .osio1 .responsive_right {
+    width: 70%; /* The width is 60%, by default */
+  }
+  .osio1 .responsive_left img{
+    max-width: 260px;
+  }
+}
+/* FOR x-LARGE DESKTOP*/
+@media only screen and (min-width: 1600px) {
+  body {
+    width: 100%;
+  }
+  .content1{
+    width: 70%;
+  }
+  .content2{
+    width: 45%;
+  }
+  .content3{
+    width: 60%;
+  }
+  .content4{
+    width: 45%;
+  }
+  .banner {
+    font-size: 2em;
+  }
+  .banner h2 {
+    margin-bottom: -100px;
+    font-size: 3.5em;
+    right: 152px;
+  }
+  .banner h1 {
+    letter-spacing: -2px;
+    font-size: 7em;
+  }
+  .topnav a {
+    font-size: 1.5em;
+  }
+  .parallax {
+    /* Full height */
+    height: 25em; 
+  }
+  #goTopBtn {
+    bottom: 25px;
+    right: 30px;
+    font-size: 1.2em;
+    padding: 15px;
+    transition: transform .2s;
+  }
+  #goTopBtn:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  #goTopBtn:active {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
+  }
+  .osio1 .responsive_left {
+    width: 30%; /* The width is 20%, by default */
+  }
+  .osio1 .responsive_right {
+    width: 70%; /* The width is 60%, by default */
+  }
+  .osio1 .responsive_left img{
+    max-width: 260px;
   }
 }
