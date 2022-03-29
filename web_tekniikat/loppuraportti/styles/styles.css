@@ -20,6 +20,13 @@ body {
     background-color: #fefbe9;
 }
 
+.harjoitustyo a{
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #f0a04b;
+    text-align: center;
+}
 /* content styles starts here */
 /* content div styles */
 .content {

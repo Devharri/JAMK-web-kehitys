@@ -312,18 +312,34 @@ footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer a {
   text-decoration: none;
-  color: rgb(103, 103, 103);
+  color: #676767;
   margin: 0;
 }
 footer p {
   font-family:'Courier New', Courier, monospace;
   padding: 2px;
   margin: 0;
+}
+.social > a:hover {
+  opacity:0.75;
+}
+.social > a {
+  font-size:2.2em;
+  width: 50px;
+  height: 50px;
+  line-height:50px;
+  display:inline-block;
+  text-align:center;
+  border: #676767 solid;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:8px 8px;
+  opacity:1;
 }
 /* FOR MOBILE PHONES*/
 @media only screen and (max-width: 600px) {
@@ -339,7 +355,6 @@ footer p {
   .content1{
     width: 100%;
   }
-
   .osio1 .responsive_right h1 {
     text-align: center;
   }
@@ -347,6 +362,9 @@ footer p {
     text-align: center;
   }
   .content2{
+    width: 95%;
+  }
+  .content4{
     width: 95%;
   }
   .osio2 .aboutText{
@@ -509,6 +527,9 @@ footer p {
   }
   .content3{
     width: 80%;
+  }
+  .content4{
+    width: 75%;
   }
   .topnav a {
     font-size: 1.5em;
