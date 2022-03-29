@@ -313,8 +313,8 @@ footer {
   background-color: rgb(238, 238, 238);
   color: rgb(103, 103, 103);
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 footer a {
   text-decoration: none;
