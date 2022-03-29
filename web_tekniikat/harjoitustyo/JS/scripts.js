@@ -32,14 +32,14 @@ function closeFunction() {
 }
 
 
-function Tosection(secNro){
+function Tosection(secNro) {
   var d = document.getElementById('TESTIDIV');
   var testipiilo = document.getElementById('TESTIPIILO');
   testipiilo.style.opacity = "1.0";
   d.style.display = "flex";
   d.style.top = "0px";
   d.style.height = "auto";
-  nimi = "section"+secNro;
+  nimi = "section" + secNro;
   document.getElementById(nimi).scrollIntoView();
 }
 
@@ -111,29 +111,38 @@ let ticking = false;
 function HideSections() {
   var d = document.getElementById('TESTIDIV');
   var testipiilo = document.getElementById('TESTIPIILO');
-  d.style.display = "none";
-  d.style.height = "0px";
-  testipiilo.style.opacity = "0.0";
+
+  if (screen.width > 991) {
+    d.style.display = "none";
+    d.style.height = "0px";
+    testipiilo.style.opacity = "0.0";
+  } else {
+    d.style.top = "0px";
+    d.style.height = "auto";
+    testipiilo.style.opacity = "1.0";
+    d.style.display = "flex";
+  }
+
 }
 
 function doSomething(scrollPos) {
   var d = document.getElementById('TESTIDIV');
   var testipiilo = document.getElementById('TESTIPIILO');
-    //  block of code to be executed if the condition is true
-    //  block of code to be executed if the condition is false
-    
+  //  block of code to be executed if the condition is true
+  //  block of code to be executed if the condition is false
+  if (screen.width > 991) {
     if (scrollPos >= 5) {
       calcoffset1 = scrollPos;
       d.style.display = "flex";
-      d.style.height = calcoffset1+"px";
+      d.style.height = calcoffset1 + "px";
     } else {
       d.style.height = "0px";
     }
 
-    if (scrollPos > 100 && scrollPos < 430){
-      offsetti = scrollPos*2;
-      testipiilo.style.opacity = "0."+ offsetti;
-    } else if (scrollPos >= 430){
+    if (scrollPos > 100 && scrollPos < 430) {
+      offsetti = scrollPos * 2;
+      testipiilo.style.opacity = "0." + offsetti;
+    } else if (scrollPos >= 430) {
       testipiilo.style.opacity = "1.0";
     } else {
       testipiilo.style.opacity = "0.0";
@@ -141,22 +150,28 @@ function doSomething(scrollPos) {
 
 
     if (scrollPos <= 430) {
-      calcoffset = (600-(scrollPos*1.4));
-      d.style.position ="relative";
-      d.style.top = calcoffset+"px";
-    } else{
+      calcoffset = (600 - (scrollPos * 1.4));
+      d.style.position = "relative";
+      d.style.top = calcoffset + "px";
+    } else {
       d.style.top = "0px";
       d.style.height = "auto";
     }
+  }else {
+  d.style.top = "0px";
+  d.style.height = "auto";
+  testipiilo.style.opacity = "1.0";
 }
 
-document.addEventListener('scroll', function(e) {
+} 
+
+document.addEventListener('scroll', function (e) {
   lastKnownScrollPosition = window.scrollY;
 
-  
-    window.requestAnimationFrame(function() {
-      doSomething(lastKnownScrollPosition);
-      
-    });
-  
+
+  window.requestAnimationFrame(function () {
+    doSomething(lastKnownScrollPosition);
+
+  });
+
 });
