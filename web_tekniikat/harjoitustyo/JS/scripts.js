@@ -111,7 +111,7 @@ let ticking = false;
 function HideSections() {
   var d = document.getElementById('TESTIDIV');
   var testipiilo = document.getElementById('TESTIPIILO');
-
+  //var navlogo = document.getElementById('navlogo');
   if (screen.width > 991) {
     d.style.display = "none";
     d.style.height = "0px";
@@ -123,11 +123,14 @@ function HideSections() {
     d.style.display = "flex";
   }
 
+  //navlogo.style.display = "none";
+
 }
 
 function doSomething(scrollPos) {
   var d = document.getElementById('TESTIDIV');
   var testipiilo = document.getElementById('TESTIPIILO');
+  //var navlogo = document.getElementById('navlogo');
   //  block of code to be executed if the condition is true
   //  block of code to be executed if the condition is false
   if (screen.width > 991) {
@@ -142,11 +145,20 @@ function doSomething(scrollPos) {
     if (scrollPos > 100 && scrollPos < 430) {
       offsetti = scrollPos * 2;
       testipiilo.style.opacity = "0." + offsetti;
+      //navlogo.style.display = "inline-block";
     } else if (scrollPos >= 430) {
       testipiilo.style.opacity = "1.0";
     } else {
+      //navlogo.style.display = "none";
       testipiilo.style.opacity = "0.0";
     }
+    //if (scrollPos > 200 )
+    //{
+    //  navlogo.style.display = "inline-block";
+    //}
+    //else {
+    //  navlogo.style.display = "none";
+    //}
 
 
     if (scrollPos <= 430) {
@@ -175,3 +187,24 @@ document.addEventListener('scroll', function (e) {
   });
 
 });
+
+var observer = new IntersectionObserver(function(entries) {
+	// no intersection with screen
+  
+	if(entries[0].intersectionRatio === 0)
+  {
+    var navlogo = document.getElementById('navlogo');
+    navlogo.style.display = "inline-block";
+    //document.querySelector("#myTopnav").classList.add("nav-container-sticky");
+  }
+	// fully intersects with screen
+	else if(entries[0].intersectionRatio === 1)
+  {
+    var navlogo = document.getElementById('navlogo');
+    navlogo.style.display = "none";
+    //document.querySelector("#myTopnav").classList.remove("nav-container-sticky");
+  }
+		
+}, { threshold: [0,1] });
+
+observer.observe(document.querySelector("#nav-container-top"));

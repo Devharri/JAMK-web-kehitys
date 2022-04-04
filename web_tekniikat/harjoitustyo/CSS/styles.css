@@ -275,6 +275,13 @@ body {
 .topnav .icon {
   display: none;
 }
+
+#nav-container-top {
+	height: 1px;
+  background-color: #3aa0cb;
+  margin: 0;
+  padding: 0;
+}
 /* /TOPNAV*/
 #goTopBtn {
   display: none;
