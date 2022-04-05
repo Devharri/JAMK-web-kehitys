@@ -34,8 +34,8 @@ function closeFunction() {
 
 function Tosection(secNro) {
   var d = document.getElementById('TESTIDIV');
-  var testipiilo = document.getElementById('TESTIPIILO');
-  testipiilo.style.opacity = "1.0";
+  //var testipiilo = document.getElementById('TESTIPIILO');
+  //testipiilo.style.opacity = "1.0";
   d.style.display = "flex";
   d.style.top = "0px";
   d.style.height = "auto";
@@ -110,16 +110,16 @@ let ticking = false;
 
 function HideSections() {
   var d = document.getElementById('TESTIDIV');
-  var testipiilo = document.getElementById('TESTIPIILO');
+  //var testipiilo = document.getElementById('TESTIPIILO');
   //var navlogo = document.getElementById('navlogo');
   if (screen.width > 991) {
     d.style.display = "none";
     d.style.height = "0px";
-    testipiilo.style.opacity = "0.0";
+    //testipiilo.style.opacity = "0.0";
   } else {
     d.style.top = "0px";
     d.style.height = "auto";
-    testipiilo.style.opacity = "1.0";
+    //testipiilo.style.opacity = "1.0";
     d.style.display = "flex";
   }
 
@@ -129,7 +129,7 @@ function HideSections() {
 
 function doSomething(scrollPos) {
   var d = document.getElementById('TESTIDIV');
-  var testipiilo = document.getElementById('TESTIPIILO');
+  //var testipiilo = document.getElementById('TESTIPIILO');
   //var navlogo = document.getElementById('navlogo');
   //  block of code to be executed if the condition is true
   //  block of code to be executed if the condition is false
@@ -144,13 +144,13 @@ function doSomething(scrollPos) {
 
     if (scrollPos > 100 && scrollPos < 430) {
       offsetti = scrollPos * 2;
-      testipiilo.style.opacity = "0." + offsetti;
+      //testipiilo.style.opacity = "0." + offsetti;
       //navlogo.style.display = "inline-block";
     } else if (scrollPos >= 430) {
-      testipiilo.style.opacity = "1.0";
+      //testipiilo.style.opacity = "1.0";
     } else {
       //navlogo.style.display = "none";
-      testipiilo.style.opacity = "0.0";
+      //testipiilo.style.opacity = "0.0";
     }
     //if (scrollPos > 200 )
     //{
@@ -172,7 +172,7 @@ function doSomething(scrollPos) {
   }else {
   d.style.top = "0px";
   d.style.height = "auto";
-  testipiilo.style.opacity = "1.0";
+  //testipiilo.style.opacity = "1.0";
 }
 
 } 
